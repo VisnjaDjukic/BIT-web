@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "visnja";
+  font-weight: normal
+  src: url("font/Charmonman-Regular.ttf");
+  
+}
+@font-face {
+    font-family: "visnja";
+    font-weight: bold;
+src: url("font/Charmonman-Bold.ttf");
+}
+    
+
+#seconddiv {
+  width: 800px;
+  color: black;
+  background-color: hotpink;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-style: oblique;
+}
+
+img {
+  width: inherit;
+}
+
+#thirddiv {
+  background-color: rgba(194, 75, 75, 0.1);
+  width: 800px;
+  color: black;
+  font-family: "Gill Sans", "Trebuchet MS", sans-serif;
+}
+#first {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+}
+#first > q {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+span {
+  font-weight: bold;
+  font-style: italic;
+}
+
+p {
+  font-size: 30px;
+  font-family: "visnja";
+  font-weight: bold;
+}
+#extern {
+  font-family: "Indie Flower", cursive;
+}
