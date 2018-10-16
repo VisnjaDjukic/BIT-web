@@ -1,0 +1,58 @@
+/* Create a table with five columns and 5 rows
+Table is intended to display phone specifications
+The table should be centered on the page
+Table header row should be red
+The second column should contain images whose height should be 100px
+Each cell should have top and bottom padding of 10px
+Row background color changes to yellow on hover
+
+Extra task: Each odd row should have gray bg coloro */
+
+
+
+@font-face {
+    font-family: "Visnja Ivan";
+    src: url(https://fonts.googleapis.com/css?family=Indie+Flower);
+}
+
+
+table {
+    margin: 50px auto;
+    border-collapse: collapse;
+    border: 1px dotted silver;
+    -webkit-box-shadow: 1px 4px 44px 0px rgba(140,127,140,1);
+    -moz-box-shadow: 1px 4px 44px 0px rgba(140,127,140,1);
+    box-shadow: 1px 4px 44px 0px rgba(140,127,140,1);
+    font-family: "Visnja Ivan", cursive;
+}
+
+table .oddRow {
+    background-color: lightgray;
+}
+table th{
+    background: rgb(158, 12, 12);
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+
+}
+
+table img {
+    height:100px;
+    display: block;
+    margin: 0 auto;
+}
+table td {
+    padding: 10px 0;
+    text-align: center;
+    height: 130px;
+}
+
+table tr:hover{
+    background: gold;
+
+}
+
+img:hover{
+    height: 120px; 
+}
