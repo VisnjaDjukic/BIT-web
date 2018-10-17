@@ -1,0 +1,66 @@
+img {
+    width: 500px;
+}
+
+#firstImage {
+
+    position: relative;
+    top: 50px;
+    left: 100px;
+    vertical-align: top;
+    
+}
+
+#secondImage{
+    position:absolute;
+    top:15px;
+    right: 10px;
+
+}
+
+
+#thirdImage{
+
+  position: absolute;
+  bottom: 0px;
+}
+
+p{
+    width: 1200px;
+    margin:0px auto;
+}
+
+a {
+
+    position: fixed;
+    right:0px;
+    bottom:0px;
+}
+div {
+   background-color: #ccc;
+   width: 600px;
+   height: 200px;
+}
+
+li {
+
+
+}
+
+li {
+    display:inline;
+    background-color:yellow;
+
+}
+ul ul {
+    position: absolute;
+}
+ul ul li {
+
+    display:block;
+}
+
+#lista{
+    background-color: grey;
+}
+
