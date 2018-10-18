@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    margin:0px;
+    padding: 0px;
+}
+
+.clearfix {
+
+background-color: brown;
+width: 960px;
+margin-bottom:0px;
+
+}
+.clearfix li {
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    padding:15px;
+    float: right;
+  
+}
+
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+#prvaSlika {
+    padding-top:2px;
+    width:100%;
+}
+img {
+    width: 300px;
+}
+
+#wraper {
+    margin:0px auto;
+    width: 960px;
+}
+
+.unutrasnji {
+    width:300px;
+    float:left;
+    padding-top:10px;
+    padding-right: 10px;
+}
+.unutrasnji img {
+    padding-right: 15px;
+}
+#poseban { 
+
+    clear: both;
+}
+#listica {
+    background-color: #fbd83b;
+    height: 250px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 320px;
+    float:right;
+}
+#listica li {
+    padding:10px;
+    border-bottom: 1px solid grey;
+    list-style-type: none;
+    font-size: 20px;
+}
