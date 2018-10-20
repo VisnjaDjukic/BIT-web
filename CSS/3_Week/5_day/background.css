@@ -1,0 +1,26 @@
+/* body {
+
+    background-image: url(https://rfclipart.com/image2/big/c3-02-f5/arabesque-vintage-decor-floral-ornate-pattern-Download-Royalty-free-Vector-File-EPS-369253.jpg);
+
+    background-attachment: fixed;
+} */
+
+
+/* body {
+
+    background-image: url(http://www.carrielewis.co.uk/wp-content/uploads/2012/10/Red-Riding-Hood-pattern.jpg);
+
+    background-attachment: fixed;
+    background-position: right center;
+    background-repeat: no-repeat;
+} */
+
+body {
+
+    background-size: cover;
+    background-image: url(http://www.carrielewis.co.uk/wp-content/uploads/2012/10/Red-Riding-Hood-pattern.jpg);
+
+    background-attachment: fixed;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
