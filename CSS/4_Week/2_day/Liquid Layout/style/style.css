@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.float {
+    float: left;
+}
+
+.container {
+    width: 50%;
+    margin: 40px auto;
+}
+
+header::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+header img {
+    border-radius: 50%;
+    margin-right: 2%;
+}
+
+section {
+    padding: 2%;
+}
+
+section:nth-of-type(1){
+    width: 40%;
+}
+
+section:nth-of-type(2){
+    width: 60%;
+    border-left: 2px solid;
+}
+
+article {
+    margin-bottom: 2%;
+}
+
+article h2 {
+    margin-bottom: 2%;
+    padding-left: 1%;
+}
