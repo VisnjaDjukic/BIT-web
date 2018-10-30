@@ -1,0 +1,238 @@
+@font-face {
+    font-family: 'Mira i Visnja';
+    src: url('./fonts/Roboto-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mira i Visnja';
+    font-size: 1em;
+    color: gray;
+}
+
+nav {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1 {
+    color: rgb(134, 137, 139);
+    text-align: center;
+}
+
+h1 span {
+    padding-left: 8px;
+    color: rgb(248, 166, 14);
+    border-left: 3px solid rgb(134, 137, 139);
+    border-top: 3px solid rgb(134, 137, 139);
+    border-bottom: 3px solid rgb(134, 137, 139);
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    background-color: rgb(101, 175, 236);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px 0 10px 0;
+}
+
+nav li {
+    font-size: 1em;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: white;
+    font-weight: bold;
+}
+
+@media (min-width:768px) {
+    h1 {
+        float: left;
+        color: white;
+    }
+    nav ul {
+        float: right;
+        margin-top: 5px;
+        background-color: transparent;
+    }
+    nav li {
+        float: left;
+        padding: 20px;
+    }
+}
+
+/* header */
+
+header {
+    background: url("./images/banner3.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 60px 30px;
+}
+
+header h2 {
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    font-weight: normal;
+}
+
+header a {
+    background-color: rgb(55, 85, 219);
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 25px;
+    border-radius: 25px;
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 125px;
+}
+
+@media (min-width:768px) {
+    header {
+        padding: 150px 60px 80px;
+    }
+}
+
+/*  welcome section */
+
+main {
+    width: 85%;
+    margin: 0 auto;
+}
+
+section h2 {
+    color: black;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+section h3 {
+    padding: 10px 0;
+    font-size: 16px;
+    color: rgb(101, 175, 236);
+}
+
+section p {
+    padding: 10px 0 10px 0;
+}
+
+article ul.image-marker {
+    list-style-image: url("./images/arrow_bullet.png");
+    list-style-position: inside;
+}
+
+article li {
+    padding: 10px 0 10px 0;
+}
+
+article img {
+    width: 100%;
+    margin: 20px 0 10px 0;
+}
+
+@media (min-width:768px) {
+    section h2 {
+        margin-top: 50px;
+    }
+    .left {
+        display: inline-block;
+        width: 50%;
+    }
+    article img {
+        float: right;
+        width: 50%;
+    }
+    #second-article {
+        clear: both;
+    }
+}
+
+@media (min-width:1200px) {
+    section {
+        margin: 0 15% 10% 15%;
+    }
+    .left {
+        float: left;
+    }
+    article img {
+        float: left;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #second-article {
+        clear: none;
+        width: 33%
+    }
+    section article {
+        float: left;
+        width: 66%;
+        display: inline-block;
+    }
+    .clearfix:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+}
+
+section .blue {
+    background-color: rgb(101, 175, 236);
+    margin-bottom: 5%;
+    color: white;
+}
+
+section .blue img {
+    width: 20%;
+    border-radius: 50%;
+    padding: 3px;
+    border: solid white 2px;
+    margin: 5% 0 1% 2%;
+    float: left;
+}
+
+section .blue h4 {
+    color: black;
+    float: left;
+    font-weight: bold;
+    margin: 15% 0 2% 3%;
+}
+
+section .blue p {
+    clear: both;
+    padding: 6%;
+    font-size: 1.3em;
+    margin: 0 2% 3% 2%;
+    word-spacing: 5px;
+    line-height: 170%;
+}
+
+section h2 {
+    margin: 20% 0 12% 0;
+}
+
+@media (min-width:768px) {
+    .blue {
+        width: 45%;
+        float: left;
+        margin-right: 5%;
+    }
+}
+
+@media (min-width:1200px) {
+    .blue {
+        width: 31%;
+        float: left;
+        margin-right: 2%;
+    }
+}

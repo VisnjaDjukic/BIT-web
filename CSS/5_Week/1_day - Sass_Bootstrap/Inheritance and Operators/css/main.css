@@ -1,0 +1,20 @@
+.common, #firstp, #secondp, #thirdp {
+  padding: 15px;
+  color: pink;
+  border: 2px solid;
+  font-size: 12px;
+  width: 100%;
+  box-sizing: border-box; }
+
+#firstp {
+  border-color: red;
+  width: 70%; }
+
+#secondp {
+  border-color: blue; }
+
+#thirdp {
+  border-color: green;
+  font-size: 24px; }
+
+/*# sourceMappingURL=main.css.map */

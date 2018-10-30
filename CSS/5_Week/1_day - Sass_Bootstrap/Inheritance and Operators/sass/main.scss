@@ -1,0 +1,26 @@
+.common {
+    padding: 15px;
+    color: pink;
+    border: 2px solid;
+    font-size: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#firstp {
+    @extend .common;
+    border-color:red;
+    width: 100%-30;
+    
+}
+
+#secondp {
+    @extend .common;
+    border-color:blue;
+}
+
+#thirdp {
+    @extend .common;
+    border-color:green;
+    font-size: 12px*2;
+}
