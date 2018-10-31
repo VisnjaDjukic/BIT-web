@@ -1,0 +1,21 @@
+
+.row div p{
+    background-color: pink;
+    border: 1px solid black;
+    padding: 10px;
+
+}
+
+.firstColor {
+     background: rgb(173, 122, 122);
+}
+.secondColor {
+    background: rgb(189, 189, 149);
+}
+.thirdColor {
+    background: wheat;
+}
+
+.minHeight {
+    min-height: 150px;
+}
