@@ -1,0 +1,55 @@
+@font-face {
+  font-family: Lato;
+  src: url("../fonts/Lato-Regular.ttf"); }
+body {
+  font-family: Lato; }
+
+.main-nav {
+  background-color: #2a2a3a; }
+  .main-nav nav {
+    padding-left: 0;
+    padding-right: 0; }
+  .main-nav a {
+    color: white; }
+  .main-nav button {
+    color: white;
+    border: 1px solid;
+    background: #30d4b9; }
+    .main-nav button span {
+      background-image: url("../image/hamburger-white.svg"); }
+
+header {
+  background: #30d4b9;
+  text-align: center;
+  padding: 30px;
+  color: white;
+  font-weight: bolder; }
+
+main {
+  text-align: center;
+  font-weight: bolder; }
+  main h1 {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  main img {
+    margin-top: 20px;
+    width: 100%; }
+
+article {
+  background: #30d4b9;
+  color: white;
+  text-align: center;
+  margin-top: 50px; }
+  article h1 {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  article .btn {
+    margin-bottom: 50px;
+    background-color: transparent;
+    border: 1px white solid; }
+
+.secondArticle {
+  background: none;
+  color: black; }
+
+/*# sourceMappingURL=main.css.map */
