@@ -1,0 +1,49 @@
+.container{
+    width: 100%;
+   
+   
+}
+.movie {
+width:70%;
+    border: 1px solid  black;
+    margin: 0 10px;
+    text-align: center;
+    font-size: 40px;
+    height: 90vh;
+}
+.title{
+    width:100%;
+    margin: 0 10px;
+    border:1px solid black;
+}
+p {
+    text-align: left;
+}
+.movie-title{
+    width:90%;
+    display: inline-block;
+    padding:10px;
+
+}
+.movie-length{
+    width:90%;
+    display: inline-block;
+    padding:15px;
+}
+.movie-genre{
+    width: 90%;
+}
+.movie-add{
+    width:90%;
+    padding: 15px;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    
+}
+.total-length{
+    text-align: right;
+    
+}
+
+
