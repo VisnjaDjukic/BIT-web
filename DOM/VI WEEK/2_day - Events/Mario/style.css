@@ -1,0 +1,10 @@
+body {
+    
+    background-image: url('./img/bg.jpg');
+    background-repeat: repeat-x;
+    background-size: 500px;
+    background-position: left bottom;
+    height:600px;
+    background-color: #0211FF;
+   
+}
