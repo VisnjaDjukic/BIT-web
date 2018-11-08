@@ -4,6 +4,7 @@ $mario = document.querySelector('.mario')
 $runningMario = document.querySelector('.runningMario')
 
 $body.addEventListener('keydown', runningMario);
+$body.addEventListener('keyup', stopRunningMario);
 
 function runningMario(event) {
 
@@ -11,10 +12,12 @@ function runningMario(event) {
         $mario.style.display = 'none';
         $runningMario.style.display = 'inline-block';
 
-    } else {
+    }
+}
+function stopRunningMario(event) {
+
+    if (event.keyCode === 39) {
         $mario.style.display = 'inline-block';
         $runningMario.style.display = 'none';
-
     }
-
 }
