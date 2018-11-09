@@ -1,6 +1,7 @@
 var dataModule = (function () {
     var storage = {
-        movies: []
+        movies: [],
+        totalLength: 0
     }
 
     function Movie(title, length, genre) {
@@ -11,7 +12,7 @@ var dataModule = (function () {
 
     Movie.prototype.getInfo = function () {
         return this.title + ", " + this.length + ", " + this.genre;
-    }
+    };
 
     function createMovie(title, length, genre) {
         return new Movie(title, length, genre);
@@ -21,10 +22,24 @@ var dataModule = (function () {
         storage.movies.push(movie);
     }
 
+    function calculateTotalLength() {
+        var total = 0;
+        for (var i = 0; i < storage.movies.length; i++) {
+            total += storage.movies[i].length;
+        }
+        storage.totalLength = total;
+    }
+
+    function getTotalLength() {
+        calculateTotalLength();
+        return storage.totalLength;
+    }
+
     return {
         createMovie: createMovie,
-        addMovie: addMovie
-    }
+        addMovie: addMovie,
+        getTotalLength: getTotalLength
+    };
 })();
 
 var uiModule = (function () {
@@ -32,6 +47,7 @@ var uiModule = (function () {
     var $movieLength = document.querySelector("#length");
     var $movieGenre = document.querySelector("#genre");
     var $movieList = document.querySelector(".movie-list");
+    var $movieTotalLength = document.querySelector(".movie-totalLength");
 
     // function getTitle() {
     //     return $movieTitle.value;
@@ -55,9 +71,14 @@ var uiModule = (function () {
         $movieList.innerHTML += movie.getInfo() + '<br>';
     }
 
+    function displayTotalLength(totalLength) {
+        $movieTotalLength.innerHTML = totalLength;
+    }
+
     return {
         collectFormInput: collectFormInput,
-        displayMovie: displayMovie
+        displayMovie: displayMovie,
+        displayTotalLength: displayTotalLength
     }
 
 })();
@@ -89,6 +110,9 @@ var controller = (function (data, ui) {
 
         // display movie
         uiModule.displayMovie(newMovieInstance);
+
+        //display total length
+       
 
         // reset form
     }
