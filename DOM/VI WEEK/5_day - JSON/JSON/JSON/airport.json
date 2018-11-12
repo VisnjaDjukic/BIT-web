@@ -1,0 +1,47 @@
+{
+    "name": "Nikola Tesla",
+    "listOfFlights": [
+        {
+            "relation": "Belgrade - New York",
+            "date": "2018-12-10",
+            "listOfPassenger": [
+                {
+                    "person": {
+                        "name": "Visnja",
+                        "surname": "Petrovic"
+                    },
+                    "seat": {
+                        "number": 12,
+                        "category": "b"
+                    }
+                },
+                {
+                    "person": {
+                        "name": "Ana",
+                        "surname": "Lazic"
+                    },
+                    "seat": {
+                        "number": 23,
+                        "category": "e"
+                    }
+                }
+            ]
+        },
+        {
+            "relation": "Belgrade - Havana",
+            "date": "2019-02-23",
+            "listOfPassenger": [
+                {
+                    "person": {
+                        "name": "Sima",
+                        "surname": "Anic"
+                    },
+                    "seat": {
+                        "number": 1,
+                        "category": "b"
+                    }
+                }
+            ]
+        }
+    ]
+}
