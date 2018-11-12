@@ -25,7 +25,7 @@ var dataModule = (function () {
     function calculateTotalLength() {
         var total = 0;
         for (var i = 0; i < storage.movies.length; i++) {
-            total += storage.movies[i].length;
+            total += parseInt(storage.movies[i].length);
         }
         storage.totalLength = total;
     }
@@ -72,7 +72,8 @@ var uiModule = (function () {
     }
 
     function displayTotalLength(totalLength) {
-        $movieTotalLength.innerHTML = totalLength;
+       
+        $movieTotalLength.textContent = totalLength;
     }
 
     return {
@@ -95,6 +96,12 @@ var controller = (function (data, ui) {
         $addMovie.addEventListener("click", onAddMovieHandler);
     }
 
+    function updatedTotalMoviesLength() {
+        totalLength = dataModule.getTotalLength();
+        uiModule.displayTotalLength(totalLength);
+
+    }
+
     function onAddMovieHandler() {
 
         // collect form data
@@ -112,7 +119,8 @@ var controller = (function (data, ui) {
         uiModule.displayMovie(newMovieInstance);
 
         //display total length
-       
+        updatedTotalMoviesLength();
+
 
         // reset form
     }

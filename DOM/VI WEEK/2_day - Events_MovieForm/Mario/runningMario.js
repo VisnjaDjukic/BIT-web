@@ -24,3 +24,4 @@ function stopRunningMario(event) {
         $runningMario.style.display = 'none';
     }
 }
+
